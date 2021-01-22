@@ -19,8 +19,6 @@ class BarCodeReaderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("テスト")
-        
         // カメラやマイクのデバイスそのものを管理するオブジェクトを生成（ここではワイドアングルカメラ・ビデオ・背面カメラを指定）
         let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera],
                                                                 mediaType: .video,
@@ -98,7 +96,7 @@ extension BarCodeReaderViewController: AVCaptureMetadataOutputObjectsDelegate {
             
             // 取得したデータの処理を行う
             let alert: UIAlertController = UIAlertController(title: "バーコードの中身", message: metadata.stringValue, preferredStyle: UIAlertController.Style.alert)
-            let cancel: UIAlertAction = UIAlertAction(title: "キャンセル", style: UIAlertAction.Style.cancel, handler:nil)
+            let cancel: UIAlertAction = UIAlertAction(title: Const.CANCEL_BUTTON_LABEL, style: UIAlertAction.Style.cancel, handler:nil)
             alert.addAction(cancel)
             present(alert, animated: true, completion: nil)
         }

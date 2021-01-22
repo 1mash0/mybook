@@ -21,7 +21,7 @@ final class BookListViewController: UIViewController {
         } else {
             print("false")
         }
-        navigationItem.setRightButton(title: "追加", style: .plain, target: self, action: #selector(tappedRightButton(_:)))
+        navigationItem.setRightButton(title: Const.ADD_BUTTON_LABEL, style: .plain, target: self, action: #selector(tappedRightButton(_:)))
     }
     
     @objc func tappedRightButton(_ sender: AnyObject) {
