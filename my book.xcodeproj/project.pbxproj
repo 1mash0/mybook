@@ -15,6 +15,7 @@
 		149B252B254AFE4400AE4421 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B252A254AFE4400AE4421 /* FirebaseManager.swift */; };
 		149B2533254AFED800AE4421 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B2532254AFED800AE4421 /* Progress.swift */; };
 		149B2539254B022200AE4421 /* CustomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149B2538254B022200AE4421 /* CustomeNavigationController.swift */; };
+		14BBC17E25BB031300454A7D /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BBC17D25BB031300454A7D /* Const.swift */; };
 		14D5374D254AC5E0009E2349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5374C254AC5E0009E2349 /* AppDelegate.swift */; };
 		14D5374F254AC5E0009E2349 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D5374E254AC5E0009E2349 /* SceneDelegate.swift */; };
 		14D53756254AC5E3009E2349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D53755254AC5E3009E2349 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		149B252A254AFE4400AE4421 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		149B2532254AFED800AE4421 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		149B2538254B022200AE4421 /* CustomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeNavigationController.swift; sourceTree = "<group>"; };
+		14BBC17D25BB031300454A7D /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		14D53749254AC5E0009E2349 /* my book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "my book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D5374C254AC5E0009E2349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14D5374E254AC5E0009E2349 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				149B2538254B022200AE4421 /* CustomeNavigationController.swift */,
+				14BBC17D25BB031300454A7D /* Const.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				149B2539254B022200AE4421 /* CustomeNavigationController.swift in Sources */,
 				14D5374D254AC5E0009E2349 /* AppDelegate.swift in Sources */,
 				14D53780254AC830009E2349 /* RootViewController.swift in Sources */,
+				14BBC17E25BB031300454A7D /* Const.swift in Sources */,
 				14D5374F254AC5E0009E2349 /* SceneDelegate.swift in Sources */,
 				149B252B254AFE4400AE4421 /* FirebaseManager.swift in Sources */,
 				14D53785254AC879009E2349 /* SplashViewController.swift in Sources */,
