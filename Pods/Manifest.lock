@@ -1,0 +1,24 @@
+PODS:
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - R.swift
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - R.swift
+    - R.swift.Library
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 622a6f78b3f17f4b674ff0591d3b184467a211a4
+
+COCOAPODS: 1.10.0
