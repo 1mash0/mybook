@@ -27,6 +27,9 @@
 		14D73FF825BAED5E00194CCA /* BarCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D73FF725BAED5E00194CCA /* BarCodeReaderViewController.swift */; };
 		14D7400025BAEF4C00194CCA /* BarCodeReader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D73FFF25BAEF4C00194CCA /* BarCodeReader.storyboard */; };
 		18A8D73BA4C09F7CD68561CF /* Pods_my_book.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBA9FA27264CBF9B6839126 /* Pods_my_book.framework */; };
+		D7BEEC9526F7330900178AE5 /* BookListCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BEEC9326F7330900178AE5 /* BookListCustomCell.swift */; };
+		D7BEEC9626F7330900178AE5 /* BookListCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7BEEC9426F7330900178AE5 /* BookListCustomCell.xib */; };
+		D7BEEC9826F73E9400178AE5 /* BookListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BEEC9726F73E9400178AE5 /* BookListViewModel.swift */; };
 		E21AE811A1171B4823B6D38A /* Pods_my_book_my_bookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F088B81B4E446BEE0CF75663 /* Pods_my_book_my_bookUITests.framework */; };
 		ED5C7A4FBF6770A25C9F70FF /* Pods_my_bookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA21ACC5A1E7C4EC27AEBD12 /* Pods_my_bookTests.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +84,9 @@
 		91A7ED73B94E06E8E8432ED2 /* Pods-my book-my bookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my book-my bookUITests.release.xcconfig"; path = "Target Support Files/Pods-my book-my bookUITests/Pods-my book-my bookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AA21ACC5A1E7C4EC27AEBD12 /* Pods_my_bookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_my_bookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBA9FA27264CBF9B6839126 /* Pods_my_book.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_my_book.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7BEEC9326F7330900178AE5 /* BookListCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListCustomCell.swift; sourceTree = "<group>"; };
+		D7BEEC9426F7330900178AE5 /* BookListCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookListCustomCell.xib; sourceTree = "<group>"; };
+		D7BEEC9726F73E9400178AE5 /* BookListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListViewModel.swift; sourceTree = "<group>"; };
 		F088B81B4E446BEE0CF75663 /* Pods_my_book_my_bookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_my_book_my_bookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0B7BA694E9B74CA59AD7A43 /* Pods-my bookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-my bookTests.release.xcconfig"; path = "Target Support Files/Pods-my bookTests/Pods-my bookTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,8 +139,10 @@
 		149B2515254AF6A600AE4421 /* BookList */ = {
 			isa = PBXGroup;
 			children = (
+				D7BEEC8E26F7322E00178AE5 /* Cell */,
 				149B2516254AF6B900AE4421 /* BookList.storyboard */,
 				149B251B254AF6E500AE4421 /* BookListViewController.swift */,
+				D7BEEC9726F73E9400178AE5 /* BookListViewModel.swift */,
 			);
 			path = BookList;
 			sourceTree = "<group>";
@@ -257,6 +265,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D7BEEC8E26F7322E00178AE5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D7BEEC9326F7330900178AE5 /* BookListCustomCell.swift */,
+				D7BEEC9426F7330900178AE5 /* BookListCustomCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14D53759254AC5E3009E2349 /* LaunchScreen.storyboard in Resources */,
+				D7BEEC9626F7330900178AE5 /* BookListCustomCell.xib in Resources */,
 				14D7400025BAEF4C00194CCA /* BarCodeReader.storyboard in Resources */,
 				149B2517254AF6B900AE4421 /* BookList.storyboard in Resources */,
 				14D53756254AC5E3009E2349 /* Assets.xcassets in Resources */,
@@ -517,10 +535,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7BEEC9526F7330900178AE5 /* BookListCustomCell.swift in Sources */,
 				149B2533254AFED800AE4421 /* Progress.swift in Sources */,
 				149B2522254AF88200AE4421 /* LoginViewController.swift in Sources */,
 				149B2539254B022200AE4421 /* CustomeNavigationController.swift in Sources */,
 				14D5374D254AC5E0009E2349 /* AppDelegate.swift in Sources */,
+				D7BEEC9826F73E9400178AE5 /* BookListViewModel.swift in Sources */,
 				14D53780254AC830009E2349 /* RootViewController.swift in Sources */,
 				14BBC17E25BB031300454A7D /* Const.swift in Sources */,
 				14D5374F254AC5E0009E2349 /* SceneDelegate.swift in Sources */,
