@@ -2,8 +2,15 @@
 # platform :ios, '9.0'
 
 def common_pods
-    pod 'R.swift'
+    pod 'R.swift', ’~> 5.2.2'
     pod 'SVProgressHUD'
+
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxDataSources'
+    pod 'RxGesture'
+
+    pod 'Moya/RxSwift', '~> 15.0'
 end
 
 target 'my book' do
