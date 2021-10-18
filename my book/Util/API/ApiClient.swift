@@ -57,11 +57,6 @@ final class ApiClient {
     }
     
     func makeRequestStub<G: ApiTargetType>(_ request: G) -> Single<G.Response> {
-//        stubProvider.rx
-//            .request(MultiTarget(request))
-//            .filterSuccessfulStatusCodes() // ステータスコードのチェック
-//            .map(G.Response.self, failsOnEmptyData: false)
-        
         stubProvider.rx
             .request(MultiTarget(request))
             .filterSuccessfulStatusCodes() // ステータスコードのチェック
