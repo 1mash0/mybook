@@ -17,7 +17,10 @@ final class ApiClient {
     
     private let provider = MoyaProvider<MultiTarget>()
     
+    // 即座にスタブデータを返却するProvider
     private let stubProvider = MoyaProvider<MultiTarget>(stubClosure: MoyaProvider.immediatelyStub)
+    // n秒後にスタブデータを返却するProvider
+    // private let delayStubProvider = MoyaProvider<MultiTarget>(stubClosure: MoyaProvider.delayed(seconds: 1.0))
     
     private let disposeBag = DisposeBag()
     
