@@ -87,7 +87,7 @@ class BookListCustomCell: UITableViewCell {
     /// - Parameter gestureRecognizer: gestureRecognizer description
     /// - Parameter otherGestureRecognizer: otherGestureRecognizer description
     override func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        // スクロール中にグラフビューと顧客ビューがタップされたらGestureを同時認識しないようにする
+        // スクロール中のタップGestureを認識しないようにする
         if gestureRecognizer is UITapGestureRecognizer,
            otherGestureRecognizer is UIPanGestureRecognizer {
             return false
